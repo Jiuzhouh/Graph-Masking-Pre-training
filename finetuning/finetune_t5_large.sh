@@ -1,0 +1,21 @@
+python finetune_t5.py \
+--data_dir=event_narrative \
+--gpus 1 \
+--learning_rate=3e-5 \
+--output_dir=t5_large_result_event_pt_on_spans_XY_conti \
+--num_train_epochs 5 \
+--train_batch_size 3 --eval_batch_size 3 \
+--max_source_length=128 \
+--max_target_length=128 \
+--val_max_target_length=128 \
+--test_max_target_length=128 \
+--eval_max_gen_length=128 \
+--model_name_or_path t5_large_result_event_pt_on_spans_XY/best_tfmr \
+--task rdf2text \
+--do_train \
+--early_stopping_patience 5 \
+--warmup_steps 2 \
+--do_predict \
+--lr_scheduler cosine_w_restarts \
+--eval_beams 5
+ "$@"
