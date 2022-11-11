@@ -8,7 +8,7 @@ pip install -r requirements.txt
 
 ## Preprocess
 ### Download Original Dataset
-Download [WebNLG+2020](https://gitlab.com/shimorina/webnlg-dataset/tree/master/release_v3.0), [DART](https://github.com/Yale-LILY/dart), [EventNarrative](https://www.kaggle.com/datasets/acolas1/eventnarration).
+We use [WebNLG+2020](https://gitlab.com/shimorina/webnlg-dataset/tree/master/release_v3.0), [DART](https://github.com/Yale-LILY/dart), [EventNarrative](https://www.kaggle.com/datasets/acolas1/eventnarration) in this experiment.
 
 ### Augnemt the Dataset with Level Marker
 For WebNLG and DART, you should run the following scripts in `preprocess` folder:
