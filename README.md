@@ -24,7 +24,7 @@ For EventNarrative, just manually add the level marker = 1 to the input triple.
 Use the `generate datasets.ipynb` in `preprocess` folder to generate the masked datasets.
 
 ## Pre-training
-Before pre-traiing, check and make sure the data path in `finetune_masked_spans.sh` in `pretraiing` folder is right. Then run:
+Before pre-training, check and make sure the data path in `finetune_masked_spans.sh` in `pretraiing` folder is right. Then run:
 ```
 ./finetune_masked_spans.sh t5-large 0
 ```
