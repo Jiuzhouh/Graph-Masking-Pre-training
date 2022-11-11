@@ -7,10 +7,10 @@ pip install -r requirements.txt
 ```
 
 ## Preprocess
-### Download Original Dataset
+### Step 1: Download Original Dataset
 We use [WebNLG+2020](https://gitlab.com/shimorina/webnlg-dataset/tree/master/release_v3.0), [DART](https://github.com/Yale-LILY/dart), [EventNarrative](https://www.kaggle.com/datasets/acolas1/eventnarration) in this experiment.
 
-### Augnemt the Dataset with Level Marker
+### Step 2: Augnemt the Dataset with Level Marker
 For WebNLG and DART, you should run the following scripts in `preprocess` folder:
 ```
 python webnlg_tree.py
@@ -20,7 +20,8 @@ or
 python dart_tree.py
 ```
 For EventNarrative, just manually add the level marker = 1 to the input triple.
-### Generate the Masked Dataset
+
+### Step 3: Generate the Masked Dataset
 Use the `generate datasets.ipynb` in `preprocess` folder to generate the masked datasets.
 
 ## Pre-training
