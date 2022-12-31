@@ -1,5 +1,5 @@
 # Graph-Masking-Pre-training for G2T Generation
-This is the official code for EMNLP 2022 paper: [Self-supervised Graph Masking Pre-training for Graph-to-Text Generation](https://arxiv.org/abs/2210.10599).
+This is the official code for EMNLP 2022 paper: [Self-supervised Graph Masking Pre-training for Graph-to-Text Generation](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.321/).
 
 ## Setup
 ```
