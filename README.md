@@ -1,5 +1,5 @@
 # Graph-Masking-Pre-training for G2T Generation
-This is the official code for EMNLP 2022 paper: [Self-supervised Graph Masking Pre-training for Graph-to-Text Generation](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.321/).
+This is the official code for EMNLP 2022 paper: [Self-supervised Graph Masking Pre-training for Graph-to-Text Generation](https://aclanthology.org/2022.emnlp-main.321/).
 
 ## Setup
 ```
@@ -38,19 +38,17 @@ Before finetuning, make sure the checkpoint of the pre-training model is saved a
 
 ## Citation
 ```
-@article{DBLP:journals/corr/abs-2210-10599,
-  author    = {Jiuzhou Han and
-               Ehsan Shareghi},
-  title     = {Self-supervised Graph Masking Pre-training for Graph-to-Text Generation},
-  journal   = {CoRR},
-  volume    = {abs/2210.10599},
-  year      = {2022},
-  url       = {https://doi.org/10.48550/arXiv.2210.10599},
-  doi       = {10.48550/arXiv.2210.10599},
-  eprinttype = {arXiv},
-  eprint    = {2210.10599},
-  timestamp = {Tue, 25 Oct 2022 14:25:08 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2210-10599.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@inproceedings{han-shareghi-2022-self,
+    title = "Self-supervised Graph Masking Pre-training for Graph-to-Text Generation",
+    author = "Han, Jiuzhou  and
+      Shareghi, Ehsan",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.321",
+    pages = "4845--4853",
+    abstract = "Large-scale pre-trained language models (PLMs) have advanced Graph-to-Text (G2T) generation by processing the linearised version of a graph. However, the linearisation is known to ignore the structural information. Additionally, PLMs are typically pre-trained on free text which introduces domain mismatch between pre-training and downstream G2T generation tasks. To address these shortcomings, we propose graph masking pre-training strategies that neither require supervision signals nor adjust the architecture of the underlying pre-trained encoder-decoder model. When used with a pre-trained T5, our approach achieves new state-of-the-art results on WebNLG+2020 and EventNarrative G2T generation datasets. Our method also shows to be very effective in the low-resource setting.",
 }
 ```
